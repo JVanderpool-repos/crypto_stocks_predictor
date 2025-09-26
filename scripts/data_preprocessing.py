@@ -20,6 +20,10 @@ def preprocess_data(file_path, sequence_length=60):
 
     # Load data
     data = pd.read_csv(file_path)
+    
+    # Ensure 'Close' column contains only numeric values
+    data['Close'] = pd.to_numeric(data['Close'], errors='coerce')
+    data = data.dropna(subset=['Close'])
     close_prices = data['Close'].values.reshape(-1, 1)
 
     # Scale the data to be between 0 and 1

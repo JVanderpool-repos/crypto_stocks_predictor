@@ -18,11 +18,13 @@ def fetch_data(ticker, start_date, end_date):
     data = yf.download(ticker, start=start_date, end=end_date)
     
     # Create the data directory if it doesn't exist
-    if not os.path.exists('../data'):
-        os.makedirs('../data')
+    script_dir = os.path.dirname(os.path.realpath(__file__))
+    data_dir = os.path.join(script_dir, '..', 'data')
+    if not os.path.exists(data_dir):
+        os.makedirs(data_dir)
         
     # Save the data to a CSV file
-    file_path = f'../data/{ticker}_historical_data.csv'
+    file_path = os.path.join(data_dir, f'{ticker}_historical_data.csv')
     data.to_csv(file_path)
     print(f"Data saved to {file_path}")
     
