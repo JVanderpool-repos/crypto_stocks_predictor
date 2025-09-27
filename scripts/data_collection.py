@@ -32,10 +32,10 @@ def fetch_data(ticker, start_date, end_date):
 
 if __name__ == '__main__':
     # --- Configuration ---
-    # For crypto, use format like 'BTC-USD', 'ETH-USD'
+    # For crypto, use format like 'BTC-USD', 'ETH-USD', 'DOGE-USD'
     # For stocks, use format like 'AAPL', 'GOOGL'
-    TICKER_SYMBOL = 'BTC-USD' 
+    TICKER_SYMBOL = 'DOGE-USD' 
     START_DATE = '2020-01-01'
-    END_DATE = '2025-09-14' # Today's date
+    END_DATE = '2025-09-26' # Today's date
     
     fetch_data(TICKER_SYMBOL, START_DATE, END_DATE)

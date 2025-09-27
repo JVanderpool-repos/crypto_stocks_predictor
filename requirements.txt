@@ -4,3 +4,9 @@ yfinance
 scikit-learn
 tensorflow
 matplotlib
+seaborn
+plotly
+jupyter
+notebook
+ipywidgets
+kaleido
