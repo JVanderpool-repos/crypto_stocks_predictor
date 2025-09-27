@@ -46,7 +46,7 @@ def preprocess_data(file_path, sequence_length=60):
     return scaled_data, scaler, X, y
 
 if __name__ == '__main__':
-    TICKER_SYMBOL = 'BTC-USD'
+    TICKER_SYMBOL = 'DOGE-USD'
     FILE_PATH = f'../data/{TICKER_SYMBOL}_historical_data.csv'
     
     # Preprocess the data

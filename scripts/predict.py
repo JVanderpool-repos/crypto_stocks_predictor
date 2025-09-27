@@ -70,6 +70,6 @@ def predict_future(ticker, days_to_predict=30, sequence_length=60):
     plt.show()
 
 if __name__ == '__main__':
-    TICKER_SYMBOL = 'BTC-USD'
+    TICKER_SYMBOL = 'DOGE-USD'
     predict_future(TICKER_SYMBOL, days_to_predict=30)
     print("Future price prediction complete.")

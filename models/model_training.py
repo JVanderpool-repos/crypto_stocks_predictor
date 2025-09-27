@@ -64,7 +64,7 @@ def train_model(model, X_train, y_train, ticker, epochs=25, batch_size=32):
 
 if __name__ == '__main__':
     # --- Configuration ---
-    TICKER_SYMBOL = 'BTC-USD'
+    TICKER_SYMBOL = 'DOGE-USD'
     FILE_PATH = f'../data/{TICKER_SYMBOL}_historical_data.csv'
     
     # 1. Preprocess the data
